@@ -9,80 +9,203 @@
         html {
             scroll-behavior: smooth;
         }
+        .h-48s{
+            width: 25%;
+           
+            
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
 <!-- Header -->
-<header class="bg-gradient-to-r from-blue-700 to-white text-white py-10">
-    <div class="flex w-full bg-gradient-to-l from-blue-700 to-white text-white px-10 py-4 fixed top-0">
-        <h1 class="text-4xl font-bold text-blue-500">NCT</h1>
+<section id="home" class="bg-gradient-to-r from-gray-700 to-white text-white py-10 ">
+    <div class="flex w-full bg-gradient-to-l opacity-50 from-gray-700 to-white text-white px-10 py-4 fixed top-0">
+        <h1 class="text-4xl font-bold text-black">NCT</h1>
         <div class="flex items-center ml-auto">
-            <h1 class="text-1xl font-bold mx-4">Home</h1>
+            <h1 class="text-1xl font-bold mx-4"><a href="#home">Home</a></h1>
             <h1 class="text-1xl font-bold mx-4 hover transition"><a href="#about">About</a></h1>
-            <h1 class="text-1xl font-bold mx-4">Skill</h1>
+            <h1 class="text-1xl font-bold mx-4"><a href="#skill">Skill</a></h1>
             <h1 class="text-1xl font-bold mx-4"><a href="#projects">projects</a></h1>
             <h1 class="text-1xl font-bold mx-4">CV</h1>
             <h1 class="text-1xl font-bold mx-4"><a href="#contact">Contact</a></h1>
             
         </div>
     </div>
-    <div class="container mx-auto text-center mt-20 p-5">
-        <h1 class="text-4xl font-bold">Hi, I'm <span class="text-yellow-300">Trần Công Nguyên</span></h1>
-        <div class="flex w-full justify-center items-center">
-            <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=31820&format=png&color=ffffff" alt="Developer Icon">
-            <p class="text-2xl m-2 text-lg font-bold ">A Software Developer</p>
+    <div class="flex justify-between container mx-auto text-center mt-20 px-20">
+        <div class=" m-6 ">
+            <h1 class="text-4xl font-bold">Hi, I'm <span class="text-yellow-300">Trần Công Nguyên</span></h1>
+            <p class="mt-4 text-lg max-w-2xl mx-auto">
+                Nothing is impossible. Pursue your own dreams instead of
+            </p>
+            <p class="mt-4 text-lg max-w-2xl mx-auto">
+                 earning money to fulfill someone else's dreams
+            </p>
+            <div class="flex w-full justify-center items-center">
+                <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=31820&format=png&color=ffffff" alt="Developer Icon">
+                <p class="text-sm m-2 text-lg font-bold ">A Software Developer</p>
+
+                <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=12598&format=png&color=ffffff" alt="Developer Icon">
+                <a href="https://github.com/nct2k3" class="text-sm underline m-2 text-lg font-bold" target="_blank" rel="noopener noreferrer">
+                    https://github.com/nct2k3
+                </a>
+            </div>
+            
         </div>
-        <div class="flex w-full justify-center items-center">
-            <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=12598&format=png&color=ffffff" alt="Developer Icon">
-            <a href="https://github.com/nct2k3" class="text-sm underline m-2 text-lg font-bold" target="_blank" rel="noopener noreferrer">
-                https://github.com/nct2k3
-            </a>
-        </div>
-        
+        <img class="h-48s rounded-2xl" src="img.jpg">
     </div>
-</header>
+</section>
 
 <!-- About Section -->
 <section id="about" class="py-16 bg-gray-50 ">
     <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold text-blue-600 mt-4">About Me</h2>
+        <h2 class="text-3xl font-bold text-black-600 mt-4">About Me</h2>
         <p class="mt-4 text-lg max-w-2xl mx-auto">
-            I am a developer website <span class="font-semibold text-blue-500">HTML</span>,
-            <span class="font-semibold text-blue-500">CSS</span>,
-            <span class="font-semibold text-blue-500">JavaScript</span>, and frameworks like
-            <span class="font-semibold text-blue-500">React</span>, I build solutions that prioritize user experience and performance.
+            I am a programmer from Vietnam. My primary programming
+            language is <span class="font-semibold text-black-500">C#</span> for backend development. I have also worked with
+            other languages such as <span class="font-semibold text-black-500">JAVA</span>,<span class="font-semibold text-black-500">PHP</span>, and <span class="font-semibold text-black-500">Python</span>. For backend development, 
+            I use the <span class="font-semibold text-black-500">ASP.NET framework</span>, and for frontend development, I work with <span class="font-semibold text-black-500">Angular</span>.
+            <span class="font-semibold text-red-400">My job is to transform mundane ideas into exciting and innovative creations 
+            </span>
         </p>
+    </div>
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-black-600 my-4">My dream</h2>
+    </div>
+    <img  src="https://hips.hearstapps.com/hmg-prod/images/2025-mazda-mazda-3-101-669a8e26c3d86.jpg?crop=0.748xw:0.632xh;0.138xw,0.226xh&resize=2048:*">
+</section>
+
+<section id="skill" class="py-16 bg-gray-50 px-5 ">
+    <div class="container mx-auto text-center mt-4">
+        <h2 class="text-3xl font-bold text-yellow-600">My Skills</h2>
+        <h1 class=" font-bold text-2xl ">I Develop Skills Regularly</h1>
+    </div>
+    <div class="px-4 flex justify-between ">
+        <div class="w-full">
+            <div class="w-full max-w-xl p-2">
+                <!-- Progress Bar Container -->
+                <div class="flex justify-between mb-2 text-gray-500  font-semibold">
+                    <span>C#/.NET</span>
+                    <span>70%</span>
+                </div>
+                <!-- Progress Bar -->
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div class="bg-red-500 h-2 rounded-full" style="width: 70%;"></div>
+                </div>
+            </div>
+        
+            <div class="w-full max-w-xl p-2">
+                <!-- Progress Bar Container -->
+                <div class="flex justify-between mb-2 text-gray-500  font-semibold">
+                    <span>TAILWINDCSS</span>
+                    <span>80%</span>
+                </div>
+                <!-- Progress Bar -->
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div class="bg-red-500 h-2 rounded-full" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="w-full max-w-xl p-2">
+                <!-- Progress Bar Container -->
+                <div class="flex justify-between mb-2 text-gray-500  font-semibold">
+                    <span>SQL</span>
+                    <span>70%</span>
+                </div>
+                <!-- Progress Bar -->
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div class="bg-red-500 h-2 rounded-full" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <div class="w-full max-w-xl p-2">
+                <!-- Progress Bar Container -->
+                <div class="flex justify-between mb-2 text-gray-500  font-semibold">
+                    <span>TS/ ANGULAR</span>
+                    <span>60%</span>
+                </div>
+                <!-- Progress Bar -->
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div class="bg-red-500 h-2 rounded-full" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-xl p-2">
+                <!-- Progress Bar Container -->
+                <div class="flex justify-between mb-2 text-gray-500  font-semibold">
+                    <span>PHP</span>
+                    <span>50%</span>
+                </div>
+                <!-- Progress Bar -->
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div class="bg-red-500 h-2 rounded-full" style="width: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-xl p-2">
+                <!-- Progress Bar Container -->
+                <div class="flex justify-between mb-2 text-gray-500  font-semibold">
+                    <span>JAVA</span>
+                    <span>50%</span>
+                </div>
+                <!-- Progress Bar -->
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div class="bg-red-500 h-2 rounded-full" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex px-10 justify-center">
+        <div >
+            <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=71257&format=png&color=000000">
+        </div>
+        <div>
+            <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=45490&format=png&color=000000">
+        </div>
+        <div>
+            <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000">
+        </div>
+        <div>
+            <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=JAOzEPu9w5iE&format=png&color=000000">
+        </div>
+        <div>
+            <img  class="h-10 m-2" src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000">
+        </div>
+        <div>
+            <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=4rwME4PQYt7w&format=png&color=000000">
+        </div>
     </div>
 </section>
 
 <!-- Projects Section -->
 <section id="projects" class="py-16">
     <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold text-blue-600 mt-4">Projects</h2>
+        <h2 class="text-3xl font-bold text-black-600 mt-4">Projects</h2>
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Project Card -->
             <div class="bg-white shadow-lg rounded-lg p-6">
-                <h3 class="text-xl font-bold text-blue-600">📦 E-commerce Website</h3>
+                <h3 class="text-xl font-bold text-black-600 flex">
+                    <img class="h-6" src="https://img.icons8.com/?size=100&id=fAvWdEkH7knj&format=png&color=000000">
+                    Hotel Manager</h3>
                 <p class="mt-2">A responsive e-commerce platform built with React and Node.js, featuring authentication and payment integration.</p>
-                <a href="https://github.com/username/ecommerce-project" target="_blank" class="mt-4 inline-block text-blue-500 hover:underline">
+                <a href="https://github.com/username/ecommerce-project" target="_blank" class="mt-4 inline-block text-black-500 hover:underline">
                     View Project
                 </a>
             </div>
 
             <!-- Project Card -->
             <div class="bg-white shadow-lg rounded-lg p-6">
-                <h3 class="text-xl font-bold text-blue-600">🌦️ Weather App</h3>
+                <h3 class="text-xl font-bold text-black-600">🌦️ Weather App</h3>
                 <p class="mt-2">A real-time weather application powered by the OpenWeatherMap API and vanilla JavaScript.</p>
-                <a href="https://github.com/username/weather-app" target="_blank" class="mt-4 inline-block text-blue-500 hover:underline">
+                <a href="https://github.com/username/weather-app" target="_blank" class="mt-4 inline-block text-black-500 hover:underline">
                     View Project
                 </a>
             </div>
 
             <!-- Project Card -->
             <div class="bg-white shadow-lg rounded-lg p-6">
-                <h3 class="text-xl font-bold text-blue-600">✍️ Personal Blog</h3>
+                <h3 class="text-xl font-bold text-black-600">✍️ Personal Blog</h3>
                 <p class="mt-2">A minimal blogging platform built with Django and PostgreSQL, designed for easy content management.</p>
-                <a href="https://github.com/username/blog-project" target="_blank" class="mt-4 inline-block text-blue-500 hover:underline">
+                <a href="https://github.com/username/blog-project" target="_blank" class="mt-4 inline-block text-black-500 hover:underline">
                     View Project
                 </a>
             </div>
@@ -91,19 +214,31 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="py-16 bg-gradient-to-r from-blue-700 to-white text-white">
+<!-- Contact Section -->
+<section id="contact" class="py-8 bg-gradient-to-r from-gray-700 to-white text-white">
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold mt-4">Contact Me</h2>
         <div class="flex justify-between">
-            <div class=" w-full bg-blue-700 m-6 p-6 rounded-2xl">
-                xx
+            <!-- Google Map Section -->
+            <div class="w-full bg-gray-700 m-6 p-6 rounded-2xl">
+                <iframe
+                        class="rounded-2xl"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.781163224372!2d106.61544010802915!3d10.828052195681344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b9c08fde057%3A0x8ca682571a40982b!2zQ28ub3BtYXJ0IFBoYW4gVsSDbiBI4bubbg!5e0!3m2!1svi!2s!4v1737221373641!5m2!1svi!2s"
+                        width="100%"
+                        height="150"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <div class=" w-full bg-blue-700 m-6 p-6 rounded-2xl">
-                <div class="flex ">
+            <!-- Contact Info -->
+            <div class="w-full bg-gray-700 m-6 p-6 rounded-2xl">
+                <div class="flex">
                     <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=9659&format=png&color=ffffff" alt="Developer Icon">
                     <p class="text-sm m-2 text-lg font-bold">Phone: 0368731585</p>
                 </div>
-                <div class="flex  ">
+                <div class="flex">
                     <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=53430&format=png&color=ffffff" alt="Developer Icon">
                     <p class="text-sm m-2 text-lg font-bold">Address: District 12, Ho Chi Minh City, Viet Nam</p>
                 </div>
@@ -117,8 +252,8 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-blue-600 text-white py-6 text-center">
-    <p>2025 nct2k3.webprortfolio</p>
+<footer class="bg-black-600 text-white py-6 text-center">
+    <p class="text-black">2025 nct2k3.webprortfolio</p>
 </footer>
 </body>
 </html>
