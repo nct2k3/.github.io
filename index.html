@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html {
             scroll-behavior: smooth;
         }
-        .h-48s{
-            width: 25%;
-           
-            
+        .px12{
+            margin-left:12.5%;
+            max-height: 300px;
+            border-radius: 1.5rem;
+
+        }
+        .h-48s {
+            width: 30%;
+            height: auto; 
+        }
+
+        @media (max-width: 640px) { 
+            .h-48s {
+                width: 60%; 
+            }
         }
         .bg-img{
             background-image: url("bg.png");
@@ -21,16 +37,19 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
 <!-- Header -->
-<section id="home" class="bg-img text-white py-10 ">
-    <div class="flex w-full bg-gradient-to-l opacity-50 from-gray-700 to-white text-white px-10 py-4 fixed top-0">
-        <h1 class="text-4xl font-bold text-black">NCT</h1>
-        <div class="flex items-center ml-auto">
-            <h1 class="text-1xl font-bold mx-4"><a href="#home">Home</a></h1>
-            <h1 class="text-1xl font-bold mx-4 hover transition"><a href="#about">About</a></h1>
-            <h1 class="text-1xl font-bold mx-4"><a href="#skill">Skill</a></h1>
-            <h1 class="text-1xl font-bold mx-4"><a href="#projects">projects</a></h1>
-            <h1 class="text-1xl font-bold mx-4">CV</h1>
-            <h1 class="text-1xl font-bold mx-4"><a href="#contact">Contact</a></h1>
+<div class="bg-img">
+<section id="home" class=" text-white py-10 ">
+    <div class="flex justify-between  w-full bg-gradient-to-l opacity-75 from-gray-700 to-white text-white px-10 py-4 fixed z-50 top-0">
+        <h1 class="text-4xl font-bold text-black pr-10 ">NCT</h1>
+        <div class="flex flex-wrap items-center ">
+            <h1 class="text-1xl font-bold mx-4  hover:text-blue-700">
+                <a href="#home" class="hover:text-black">Home</a>
+            </h1>
+            <h1 class="text-1xl font-bold mx-4 hover transition"><a class="hover:text-black" href="#about">About</a></h1>
+            <h1 class="text-1xl font-bold mx-4"><a class="hover:text-black" href="#skill">Skill</a></h1>
+            <h1 class="text-1xl font-bold mx-4"><a class="hover:text-black" href="#projects">projects</a></h1>
+            <h1 class="text-1xl font-bold mx-4"><a class="hover:text-black"> CV</a></h1>
+            <h1 class="text-1xl font-bold mx-4"><a class="hover:text-black" href="#contact">Contact</a></h1>
             
         </div>
     </div>
@@ -44,20 +63,52 @@
                 <p class="mt-4 text-lg max-w-2xl mx-auto">
                     earning money to fulfill someone else's dreams
                 </p>
-                <div class="flex w-full justify-center items-center mt-4">
+                <div class="flex  flex-wrap w-full justify-center items-center mt-4">
+                    <div class="flex">
                     <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=31820&format=png&color=ffffff" alt="Developer Icon">
                     <p class="text-sm m-2 text-lg font-bold">A Software Developer</p>
+                    </div>
+                    <div class="flex">
                     <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=12598&format=png&color=ffffff" alt="Developer Icon">
                     <a href="https://github.com/nct2k3" class="text-sm underline m-2 text-lg font-bold" target="_blank" rel="noopener noreferrer">
                         https://github.com/nct2k3
                     </a>
+                    </div>
                 </div>
             </div>
-            <img class="h-48s rounded-2xl ml-8 md:mt-0" src="img.jpg" alt="Profile Picture">
+            <img class="h-48s rounded-2xl md:mt-0" src="img.jpg" alt="Profile Picture">
         </div>
     </div>
 </section>
-
+<div id="carouselExampleControls" class="carousel slide py-2" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://neosmart.net/blog/wp-content/uploads/2019/06/dot-NET-Standard-Logo-Rectangle.png"
+                 class="d-block px12 w-75" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://ionic.io/blog/wp-content/uploads/2024/02/angular-feature-image-1-1024x512.png" 
+                 class="d-block px12 w-75" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.mwanmobile.com/wp-content/uploads/2022/09/image-7.png"
+                 class="d-block px12 w-75" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+            <img src="https://gskygo.com/media/SQL.jpg"
+                 class="d-block px12 w-75" alt="Slide 4">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
 <!-- About Section -->
 <section id="about" class="py-16 ">
     <div class="container mx-auto text-center">
@@ -126,7 +177,7 @@
             <div class="w-full max-w-xl p-2">
                 <!-- Progress Bar Container -->
                 <div class="flex justify-between mb-2 text-gray-500  font-semibold">
-                    <span>TS/ ANGULAR</span>
+                    <span>ANGULAR</span>
                     <span>60%</span>
                 </div>
                 <!-- Progress Bar -->
@@ -252,9 +303,9 @@
 <section id="contact" class="py-8 bg-gradient-to-r from-gray-700 to-white text-white">
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold mt-4">Contact Me</h2>
-        <div class="flex justify-between">
+        <div class="flex flex-wrap justify-center">
             <!-- Google Map Section -->
-            <div class="w-full bg-gray-700 m-6 p-6 rounded-2xl">
+            <div class=" bg-gray-700 m-6 p-2 rounded-2xl">
                 <iframe
                         class="rounded-2xl"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.781163224372!2d106.61544010802915!3d10.828052195681344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b9c08fde057%3A0x8ca682571a40982b!2zQ28ub3BtYXJ0IFBoYW4gVsSDbiBI4bubbg!5e0!3m2!1svi!2s!4v1737221373641!5m2!1svi!2s"
@@ -267,7 +318,7 @@
                 </iframe>
             </div>
             <!-- Contact Info -->
-            <div class="w-full bg-gray-700 m-6 p-6 rounded-2xl">
+            <div class=" bg-gray-700 m-6 p-6 rounded-2xl">
                 <div class="flex">
                     <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=9659&format=png&color=ffffff" alt="Developer Icon">
                     <p class="text-sm m-2 text-lg font-bold">Phone: 0368731585</p>
@@ -285,9 +336,17 @@
     </div>
 </section>
 
+<div class=" w-full flex justify-end fixed bottom-2">
+    <a href="https://m.me/chaomaybe" class="w-auto flex bg-black opacity-75 p-2 rounded-full hover:opacity-100">
+    <img class="h-6" src="https://img.icons8.com/?size=100&id=YFbzdUk7Q3F8&format=png&color=000000" alt="">
+    <h1 class="text-sm mx-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-blue-500 to-blue-500"> Message Me</h1>
+</a>
+</div>
+
 <!-- Footer -->
 <footer class="bg-black-600 text-white py-6 text-center">
-    <p class="text-black">2025 nct2k3.webprortfolio.</p>
+    <p class="text-black">2025 nct2k3.webprortfolio</p>
 </footer>
+
 </body>
 </html>
