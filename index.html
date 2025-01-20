@@ -14,11 +14,14 @@
            
             
         }
+        .bg-img{
+            background-image: url("bg.png");
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
 <!-- Header -->
-<section id="home" class="bg-gradient-to-r from-gray-700 to-white text-white py-10 ">
+<section id="home" class="bg-img text-white py-10 ">
     <div class="flex w-full bg-gradient-to-l opacity-50 from-gray-700 to-white text-white px-10 py-4 fixed top-0">
         <h1 class="text-4xl font-bold text-black">NCT</h1>
         <div class="flex items-center ml-auto">
@@ -31,32 +34,32 @@
             
         </div>
     </div>
-    <div class="flex justify-between container mx-auto text-center mt-20 px-20">
-        <div class=" m-6 ">
-            <h1 class="text-4xl font-bold">Hi, I'm <span class="text-yellow-300">Trần Công Nguyên</span></h1>
-            <p class="mt-4 text-lg max-w-2xl mx-auto">
-                Nothing is impossible. Pursue your own dreams instead of
-            </p>
-            <p class="mt-4 text-lg max-w-2xl mx-auto">
-                 earning money to fulfill someone else's dreams
-            </p>
-            <div class="flex w-full justify-center items-center">
-                <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=31820&format=png&color=ffffff" alt="Developer Icon">
-                <p class="text-sm m-2 text-lg font-bold ">A Software Developer</p>
-
-                <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=12598&format=png&color=ffffff" alt="Developer Icon">
-                <a href="https://github.com/nct2k3" class="text-sm underline m-2 text-lg font-bold" target="_blank" rel="noopener noreferrer">
-                    https://github.com/nct2k3
-                </a>
+    <div class="container mx-auto text-center mt-20 px-5 ">
+        <div class="flex justify-center flex-col md:flex-row items-center " >
+            <div class="px-8 m-6 md:mr-6">
+                <h1 class="text-4xl font-bold">Hi, I'm <span class="text-yellow-300">Trần Công Nguyên</span></h1>
+                <p class="mt-4 text-lg max-w-2xl mx-auto">
+                    Nothing is impossible. Pursue your own dreams instead of
+                </p>
+                <p class="mt-4 text-lg max-w-2xl mx-auto">
+                    earning money to fulfill someone else's dreams
+                </p>
+                <div class="flex w-full justify-center items-center mt-4">
+                    <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=31820&format=png&color=ffffff" alt="Developer Icon">
+                    <p class="text-sm m-2 text-lg font-bold">A Software Developer</p>
+                    <img class="h-8 w-8" src="https://img.icons8.com/?size=100&id=12598&format=png&color=ffffff" alt="Developer Icon">
+                    <a href="https://github.com/nct2k3" class="text-sm underline m-2 text-lg font-bold" target="_blank" rel="noopener noreferrer">
+                        https://github.com/nct2k3
+                    </a>
+                </div>
             </div>
-            
+            <img class="h-48s rounded-2xl ml-8 md:mt-0" src="img.jpg" alt="Profile Picture">
         </div>
-        <img class="h-48s rounded-2xl" src="img.jpg">
     </div>
 </section>
 
 <!-- About Section -->
-<section id="about" class="py-16 bg-gray-50 ">
+<section id="about" class="py-16 ">
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold text-black-600 mt-4">About Me</h2>
         <p class="mt-4 text-lg max-w-2xl mx-auto">
@@ -67,6 +70,9 @@
             <span class="font-semibold text-red-400">My job is to transform mundane ideas into exciting and innovative creations 
             </span>
         </p>
+    </div>
+    <div class="w-full flex justify-end">
+        <img class="h-48" src="img1.png" alt="Image Description">
     </div>
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold text-black-600 my-4">My dream</h2>
@@ -183,31 +189,59 @@
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Project Card -->
             <div class="bg-white shadow-lg rounded-lg p-6">
-                <h3 class="text-xl font-bold text-black-600 flex">
-                    <img class="h-6" src="https://img.icons8.com/?size=100&id=fAvWdEkH7knj&format=png&color=000000">
-                    Hotel Manager</h3>
-                <p class="mt-2">A responsive e-commerce platform built with React and Node.js, featuring authentication and payment integration.</p>
-                <a href="https://github.com/username/ecommerce-project" target="_blank" class="mt-4 inline-block text-black-500 hover:underline">
+                <div class="flex justify-center">
+                <img class="h-12" src="https://img.icons8.com/?size=100&id=fAvWdEkH7knj&format=png&color=000000">
+                <h3 class="text-xl font-bold text-black-600 mt-2 ">Hotel Manager</h3>
+                </div>
+                <p class="mt-2">The program helps staff manage the hotel efficiently by streamlining operations, with data securely stored in a digital format for easy access and retrieval.
+                    This enhances productivity and improves overall guest experience.</p>
+                <a href="https://github.com/nct2k3/quanlykhachsan" target="_blank" class="mt-4 inline-block text-black-500 hover:underline">
                     View Project
                 </a>
+                <div class="flex justify-center">
+                    <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=45490&format=png&color=000000">
+                    <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=4rwME4PQYt7w&format=png&color=000000">
+                  
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <div class="flex justify-center">
+                    <img class="h-12" src="https://img.icons8.com/?size=100&id=egk1r2ub33ve&format=png&color=000000">
+                    <h3 class="text-xl font-bold text-black-600 mt-2">Website Manga</h3>
+                </div>
+                <p class="mt-2">The platform offers a curated selection of high-quality manga for readers, while also providing a user-friendly
+                    space for authors to effortlessly publish their stories.</p>
+                <a href="https://github.com/NQK923/DotNETAngularWeb" target="_blank" class="mt-4 inline-block text-black-500 hover:underline">
+                    View Project
+                </a>
+                <div class="flex justify-center">
+                    <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=71257&format=png&color=000000">
+                    <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=45490&format=png&color=000000">
+                    <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=4rwME4PQYt7w&format=png&color=000000">
+                    <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=VLKafOkk3sBX&format=png&color=000000">
+
+                </div>
             </div>
 
             <!-- Project Card -->
-            <div class="bg-white shadow-lg rounded-lg p-6">
-                <h3 class="text-xl font-bold text-black-600">🌦️ Weather App</h3>
-                <p class="mt-2">A real-time weather application powered by the OpenWeatherMap API and vanilla JavaScript.</p>
-                <a href="https://github.com/username/weather-app" target="_blank" class="mt-4 inline-block text-black-500 hover:underline">
-                    View Project
-                </a>
-            </div>
+            
 
             <!-- Project Card -->
             <div class="bg-white shadow-lg rounded-lg p-6">
-                <h3 class="text-xl font-bold text-black-600">✍️ Personal Blog</h3>
-                <p class="mt-2">A minimal blogging platform built with Django and PostgreSQL, designed for easy content management.</p>
-                <a href="https://github.com/username/blog-project" target="_blank" class="mt-4 inline-block text-black-500 hover:underline">
+                <div class="flex justify-center">
+                    <img class="h-12" src="https://img.icons8.com/?size=100&id=13023&format=png&color=000000">
+                    <h3 class="text-xl font-bold text-black-600 mt-2 ">Sell Electronic Equipment</h3>
+                </div>
+                <p class="mt-2">The website offers an intuitive online sales platform that ensures convenience and accessibility for all user types, enhancing the shopping experience for everyone.</p>
+                <a href="https://github.com/nct2k3/quanlykhachsan" target="_blank" class="mt-4 inline-block text-black-500 hover:underline">
                     View Project
                 </a>
+                <div class="flex justify-center">
+                    <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=JAOzEPu9w5iE&format=png&color=000000">
+                    <img class="h-10 m-2" src="https://img.icons8.com/?size=100&id=4rwME4PQYt7w&format=png&color=000000">
+
+                </div>
             </div>
         </div>
     </div>
